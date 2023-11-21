@@ -1,0 +1,349 @@
+* {
+  font-family: 'Comic Sans MS', Arial;
+  font-style: italic;
+}
+
+body {
+  background-color: #D5E4D9;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "Contactos Metodos"
+    "Telefono Metodos";
+  background-color: #5E4C3F;
+  padding: 20px;
+  color: wheat;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer .contactos {
+  grid-area: Contactos;
+  margin-left: 68px;
+}
+
+footer .telefono {
+  margin-top: 10px;
+  grid-area: Telefono;
+  margin-left: 68px;
+}
+
+footer .metodos-pago {
+  grid-area: Metodos;
+  margin-top: 25px;
+}
+
+footer .metodos-pago .metodos-pago-texto {
+  display: flex;
+  justify-content: center;
+  margin-right: 300px;
+}
+
+footer .metodos-pago .metodos-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 300px;
+}
+
+footer .metodos-pago .metodos-container .metodo-1,
+footer .metodos-pago .metodos-container .metodo-2,
+footer .metodos-pago .metodos-container .metodo-3,
+footer .metodos-pago .metodos-container .metodo-4,
+footer .metodos-pago .metodos-container .metodo-5,
+footer .metodos-pago .metodos-container .metodo-6 {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+footer .metodos-pago .metodos-container .metodo-1 img,
+footer .metodos-pago .metodos-container .metodo-2 img,
+footer .metodos-pago .metodos-container .metodo-3 img,
+footer .metodos-pago .metodos-container .metodo-4 img,
+footer .metodos-pago .metodos-container .metodo-5 img,
+footer .metodos-pago .metodos-container .metodo-6 img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  object-fit: contain;
+}
+
+header {
+  background-color: #F8F8F8;
+}
+
+header .navbar .container-fluid .navbar-brand .logo-empresa {
+  max-width: 240px;
+  max-height: 60px;
+}
+
+header .navbar .container-fluid .navbar .container-fluid .collapse .collapse .navbar-nav .nav-item .dropdown-menu li:active .dropdown-item:active {
+  background-color: #F8F8F8;
+  color: black;
+}
+
+.main-index .container-imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 120px;
+  padding: 50px;
+}
+
+.main-index .container-imagenes .item {
+  text-align: center;
+}
+
+.main-index .container-imagenes .item .descuento {
+  color: purple;
+}
+
+.main-index .container-imagenes .item img {
+  width: 100%;
+  height: 20rem;
+  object-fit: contain;
+}
+
+.main-index .container-imagenes .item p {
+  margin-top: 0.5rem;
+}
+
+.main-index .container-imagenes .item button {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #ABB658;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main-index .container-imagenes .item-1 {
+  display: none;
+  grid-area: item-1;
+}
+
+.main-index {
+  background-color: #d5e4d9;
+}
+
+.main-index .titulo-index-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #38761D;
+  color: wheat;
+  padding-top: 2rem;
+}
+
+.main-index .titulo-index-principal p {
+  padding: 1rem;
+  font-family: 'Comic Sans MS';
+  line-height: 1.5;
+  text-align: center;
+  width: 40rem;
+}
+
+.main-index .titulo-index-principal h1 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.section-index {
+  background-color: #D5E4D9;
+}
+
+.section-index .section-h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #5E4C3F;
+  color: wheat;
+}
+
+.section-index .container-imagenes-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 120px;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-index .container-imagenes-section img {
+  width: 100%;
+  height: auto;
+  transform: 0.3s, box-shadow 0, 3s;
+  object-fit: contain;
+}
+
+.section-index .container-imagenes-section h4 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 2000;
+}
+
+.section-index .container-imagenes-section p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-index .container-imagenes-section img {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #5E4C3F !important;
+}
+
+.main-comidas .titulo-comidas {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #38761D;
+  color: wheat;
+}
+
+.main-comidas .container-imagenes-comidas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6rem;
+  padding: 4rem;
+}
+
+.main-comidas .container-imagenes-comidas .imagen-comida .div-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-comidas .container-imagenes-comidas .imagen-comida img {
+  width: 24rem;
+  height: 22rem;
+}
+
+.main-comidas .container-imagenes-comidas .imagen-comida h4 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.main-bebida .titulo-bebida {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #38761D;
+  color: wheat;
+}
+
+.main-bebida .container-imagenes-bebida h4 {
+  padding-bottom: 1rem;
+}
+
+.main-bebida .container-imagenes-bebida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+
+.main-bebida .container-imagenes-bebida .bebida img {
+  width: 16rem;
+  height: 12rem;
+}
+
+.main-equipo h2 {
+  text-align: center;
+  color: wheat;
+  background-color: #5E4C3F;
+  padding-bottom: 2rem;
+}
+
+.main-equipo .equipo-container-organizacion {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.main-equipo .equipo-container-organizacion p {
+  padding-bottom: 2rem;
+  width: 50%;
+}
+
+.main-equipo .equipo-info {
+  display: flex;
+  justify-content: center;
+  background-color: #38761D;
+  color: wheat;
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.main-equipo .equipo-info p {
+  width: 75%;
+  font-size: 1.3rem;
+}
+
+.main-equipo .equipo-fotos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.main-equipo .equipo-fotos img {
+  width: 9rem;
+  height: 9rem;
+}
+
+.main-equipo .equipo-unete{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #38761D;
+  color: wheat;
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.main-equipo .equipo-unete p{
+  padding-top: 2rem;
+}
+
+.main-equipo .equipo-identidad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+background-color: #5E4C3F;
+  color: wheat;
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 5rem;
+}
